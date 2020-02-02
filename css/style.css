@@ -1,0 +1,175 @@
+body {
+  background-color: #405173;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  border: 1px solid #000000;
+  background-color: white;
+}
+
+.continer {
+}
+
+.plyers h1 {
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin: 2% 19%;
+}
+
+.winner {
+  /* border: 1px solid yellow; */
+  display: inline-block;
+  margin: auto;
+}
+
+.game {
+  margin: auto;
+  margin-top: 2%;
+  padding: 1% 20%;
+  /* border: 1px solid orange; */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: solid white;
+  margin: auto;
+  display: inline-block;
+  transition: 0.5s all;
+}
+
+.gameTable {
+  display: inline-block;
+}
+
+table {
+  border: 1px solid white;
+  margin: auto;
+  margin-top: 3%;
+  width: 40%;
+  height: 40%;
+}
+
+th {
+  border: 1px solid white;
+
+  padding: 10% 10%;
+  text-align: center;
+}
+
+.playAgain {
+  background-color: #f2a649;
+  padding: 0.5% 1.6%;
+  border-radius: 8px;
+  margin: 1% 0 0% 80%;
+}
+
+footer {
+  background-color: white;
+  margin: auto;
+}
+
+footer .footerImg {
+  margin: 1%;
+
+  display: inline-block;
+}
+
+footer span {
+  margin: 1%;
+  margin-right: 75%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+  }
+
+  .plyers h1 {
+    display: none;
+  }
+
+  footer span {
+    margin: 1%;
+    margin-right: 30%;
+  }
+
+  .playAgain {
+    padding: 0.5% 1.6%;
+    border-radius: 8px;
+    margin: 2%;
+  }
+
+  .box {
+    width: 80px;
+    height: 80px;
+    border: solid white;
+    margin: auto;
+    display: inline-block;
+    transition: 0.5s all;
+  }
+}
+
+.black {
+  background-color: black;
+}
+
+.cross:before {
+  content: "X";
+  color: red;
+  font-size: 3em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Color Theme Swatches in Hex */
+.Graphic-Design-1-hex {
+  color: #27498c;
+}
+.Graphic-Design-2-hex {
+  color: #405173;
+}
+.Graphic-Design-3-hex {
+  color: #f2a649;
+}
+.Graphic-Design-4-hex {
+  color: #f26e50;
+}
+.Graphic-Design-5-hex {
+  color: #wh;
+}
+
+/* Color Theme Swatches in RGBA */
+.Graphic-Design-1-rgba {
+  color: rgba(39, 72, 140, 1);
+}
+.Graphic-Design-2-rgba {
+  color: rgba(64, 81, 114, 1);
+}
+.Graphic-Design-3-rgba {
+  color: rgba(242, 165, 72, 1);
+}
+.Graphic-Design-4-rgba {
+  color: rgba(242, 109, 79, 1);
+}
+.Graphic-Design-5-rgba {
+  color: rgba(216, 216, 216, 1);
+}
+
+/* Color Theme Swatches in HSLA */
+.Graphic-Design-1-hsla {
+  color: hsla(219, 56, 35, 1);
+}
+.Graphic-Design-2-hsla {
+  color: hsla(219, 28, 35, 1);
+}
+.Graphic-Design-3-hsla {
+  color: hsla(33, 86, 61, 1);
+}
+.Graphic-Design-4-hsla {
+  color: hsla(11, 86, 63, 1);
+}
+.Graphic-Design-5-hsla {
+  color: hsla(0, 0, 85, 1);
+}

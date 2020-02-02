@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <!-- Adding Ubnutu font  -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Linking the CSS file  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="continer">
+      <header>
+        <h1>Tic Tac Toe</h1>
+      </header>
+
+      <div class="plyers">
+        <h1>Player 1</h1>
+
+        <div class="winner">
+          <h2>Winner</h2>
+        </div>
+        <h1>Player 2</h1>
+      </div>
+
+      <div class="game">
+        <!-- <table>
+            <tr>
+              <th class="r1t1"></th>
+              <th class="r1t2"></th>
+              <th class="r1t3"> </th>
+            </tr>
+            <tr>
+              <th class="r2t1"> </th class="r1t1">
+              <th class="r2t2"> </th>
+              <th class="r2t3"> </th>
+            </tr>
+            <tr>
+              <th class="r3t1"> </th>
+              <th class="r3t2"> </th>
+              <th class="r3t3"> </th>
+            </tr>
+          </table> -->
+        <div class="gameTable">
+          <div class="box" id="box-1"></div>
+          <div class="box" id="box-2"></div>
+          <div class="box" id="box-3"></div>
+          <br />
+          <div class="box" id="box-4"></div>
+          <div class="box" id="box-5"></div>
+          <div class="box" id="box-6"></div>
+          <br />
+          <div class="box" id="box-7"></div>
+          <div class="box" id="box-8"></div>
+          <div class="box" id="box-9"></div>
+        </div>
+
+        <button class="playAgain"><span>Play Again</span></button>
+      </div>
+
+      <footer>
+        <span>Copyright 2020 Created by Ali </span>
+        <div class="footerImg">
+          <img src="img/ga_logo.png" alt="Genral Assembly" width="50px" />
+          <img src="img/misk_log.png" alt="misk logo" width="50px" />
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
