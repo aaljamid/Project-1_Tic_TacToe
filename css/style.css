@@ -107,7 +107,7 @@ footer span {
     border: solid white;
     margin: auto;
     display: inline-block;
-    transition: 0.5s all;
+    /* transition: 0.5s all; */
   }
 }
 
@@ -118,11 +118,18 @@ footer span {
 .cross:before {
   content: "X";
   color: red;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
-  vertical-align: middle;
+  position: absolute;
 }
 
+.circle:before {
+  content: "O";
+  color: red;
+  font-size: 2em;
+  text-align: center;
+  position: absolute;
+}
 /* Color Theme Swatches in Hex */
 .Graphic-Design-1-hex {
   color: #27498c;

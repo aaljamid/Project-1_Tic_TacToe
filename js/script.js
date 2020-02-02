@@ -16,27 +16,25 @@ $(document).ready(function() {
   //DOM manipulation code
 
   let boxes = $(".box");
-
+  let count = 0;
   function clickEvent() {
-    let count = 0;
+    if (count % 2 === 0) {
+      console.log("even");
+      this.classList += " cross";
+    } else {
+      console.log("odd");
+      this.classList += " circle";
+    }
 
-    this.classList += " cross";
     this.removeEventListener("mouseleave", leaveEvent);
     this.removeEventListener("mouseover", hoverEvent);
 
     for (let i = 0; i < boxes.length; i++) {
       if (boxes[i].classList.value.includes("cross")) {
-        count++;
-
         console.log(count);
-
-        if (count % 2 === 0) {
-          console.log("even");
-        } else {
-          console.log("odd");
-        }
       }
     }
+    count++;
   }
 
   function hoverEvent() {
