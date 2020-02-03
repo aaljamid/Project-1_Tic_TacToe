@@ -70,6 +70,10 @@ footer {
   background-color: white;
   margin: auto;
   font-size: 0.6em;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
 
 footer .footerImg {
@@ -85,8 +89,9 @@ footer span {
 
 /* To make the webite responsive  */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 375px) {
   body {
+     
   }
 
   .plyers h1 {
@@ -99,18 +104,24 @@ footer span {
   }
 
   .playAgain {
-    padding: 0.5% 1.6%;
+    padding: 20% 30%;
     border-radius: 8px;
     margin: 2%;
+    margin-top: 20%;
   }
 
   .box {
-    width: 80px;
-    height: 80px;
+    width: 64px;
+    height: 64px;
     border: solid white;
     margin: auto;
+
     display: inline-block;
     /* transition: 0.5s all; */
+  }
+
+  .game {
+    margin-top: 30%;
   }
 }
 
