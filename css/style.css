@@ -7,9 +7,7 @@ body {
 header {
   border: 1px solid #000000;
   background-color: white;
-
   margin: auto;
-
   width: 100%;
   top: 0;
   left: 0;
@@ -38,7 +36,6 @@ header {
 
 .game {
   margin: auto;
-
   padding: 1% 20%;
   /* border: 1px solid orange; */
 }
@@ -55,23 +52,7 @@ header {
 .gameTable {
   display: inline-block;
   margin: auto;
-   
 }
-
-/* table {
-  border: 1px solid white;
-  margin: auto;
-  margin-top: 3%;
-  width: 40%;
-  height: 40%;
-}
-
-th {
-  border: 1px solid white;
-
-  padding: 10% 10%;
-  text-align: center;
-} */
 
 .playAgain {
   background-color: #f2a649;
@@ -102,13 +83,14 @@ footer span {
 }
 
 /* To make the webite responsive  */
-
 @media only screen and (max-width: 750px) {
-  body {
+  .plyers h1 {
+    font-size: 1.4em;
+    margin: 5% 5% 5% 6%;
   }
 
-  .plyers h1 {
-    display: none;
+  .plyers .winner {
+    font-size: small;
   }
 
   footer span {
@@ -131,11 +113,11 @@ footer span {
     margin: auto;
 
     display: inline-block;
-    /* transition: 0.5s all; */
+    transition: 0.5s all;
   }
 
   .game {
-    margin-top: 1%;
+    margin-top: 2%;
   }
 }
 
@@ -157,7 +139,6 @@ footer span {
   color: #f2a649;
   font-size: 2em;
   margin: auto;
-  /* text-align: center; */
   position: absolute;
 }
 /* Color Theme Swatches in Hex */
@@ -175,38 +156,4 @@ footer span {
 }
 .Graphic-Design-5-hex {
   color: #wh;
-}
-
-/* Color Theme Swatches in RGBA */
-.Graphic-Design-1-rgba {
-  color: rgba(39, 72, 140, 1);
-}
-.Graphic-Design-2-rgba {
-  color: rgba(64, 81, 114, 1);
-}
-.Graphic-Design-3-rgba {
-  color: rgba(242, 165, 72, 1);
-}
-.Graphic-Design-4-rgba {
-  color: rgba(242, 109, 79, 1);
-}
-.Graphic-Design-5-rgba {
-  color: rgba(216, 216, 216, 1);
-}
-
-/* Color Theme Swatches in HSLA */
-.Graphic-Design-1-hsla {
-  color: hsla(219, 56, 35, 1);
-}
-.Graphic-Design-2-hsla {
-  color: hsla(219, 28, 35, 1);
-}
-.Graphic-Design-3-hsla {
-  color: hsla(33, 86, 61, 1);
-}
-.Graphic-Design-4-hsla {
-  color: hsla(11, 86, 63, 1);
-}
-.Graphic-Design-5-hsla {
-  color: hsla(0, 0, 85, 1);
 }
