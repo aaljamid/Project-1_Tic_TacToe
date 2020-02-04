@@ -14,11 +14,10 @@ header {
 }
 
 .continer {
-  position: static;
+  position: relative;
 }
 .plyers {
   /* border: 1px solid red; */
-  position: initial;
 }
 
 .plyers h1 {
@@ -65,7 +64,7 @@ footer {
   background-color: white;
   margin: auto;
   font-size: 0.6em;
-  position: fixed;
+  
   width: 100%;
   bottom: 0;
   left: 0;
@@ -86,7 +85,8 @@ footer span {
 @media only screen and (max-width: 750px) {
   .plyers h1 {
     font-size: 1.4em;
-    margin: 5% 5% 5% 6%;
+    margin: auto;
+    margin-top: 1%;
   }
 
   .plyers .winner {
@@ -95,7 +95,7 @@ footer span {
 
   footer span {
     margin: 2%;
-    margin-right: 29%;
+    margin-right: 25%;
   }
 
   .playAgain {
