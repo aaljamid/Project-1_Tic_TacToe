@@ -16,20 +16,25 @@ header {
 .continer {
   position: relative;
 }
+
 .plyers {
-  /* border: 1px solid red; */
+  border: 1px solid #f26e50;
+  margin: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .plyers h1 {
   /* border: 1px solid red; */
   display: inline-block;
-  margin: 2% 19%;
+  margin: 2% 14%;
 }
 
 .winner {
   /* border: 1px solid yellow; */
   display: inline-block;
-  margin: auto;
+  margin: 1% 2%;
   color: aliceblue;
 }
 
@@ -64,7 +69,7 @@ footer {
   background-color: white;
   margin: auto;
   font-size: 0.6em;
-  
+
   width: 100%;
   bottom: 0;
   left: 0;
@@ -79,6 +84,17 @@ footer .footerImg {
 footer span {
   margin: 1%;
   margin-right: 75%;
+}
+
+.winLine {
+  width: 4px;
+  height: 250px;
+  transform: rotate(90deg);
+  position: relative;
+  padding: 1%;
+  margin: 1% 0% 23% 0;
+  left: 28%;
+  top: 50%;
 }
 
 /* To make the webite responsive  */
