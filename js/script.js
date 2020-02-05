@@ -9,6 +9,8 @@ $(document).ready(function() {
   let countScore2 = 0;
   let crossWin = "<h2>Cross Won!</h2>";
   let circleWin = "<h2>Circle Won!</h2>";
+  let circleTurn = "<h2>O Turn</h2>";
+  let crossTurn = "<h2>X Turn</h2>";
 
   // adding click event
   function clickEvent() {
@@ -18,12 +20,17 @@ $(document).ready(function() {
       this.classList += " cross";
       //adding the click sound function
       clickSound();
+      // adding 'O' turn
+      $(".winner").html(circleTurn);
 
       // circle = odd numbers (1,3,5, etc..)
     } else {
       this.classList += " circle";
       //adding the click sound function
       clickSound();
+      // adding 'X' turn
+
+      $(".winner").html(crossTurn);
     }
 
     // increse counter +1 for eavery click
@@ -52,7 +59,9 @@ $(document).ready(function() {
       $(".winner").html(circleWin);
       $(".score2").html(countScore2);
       // remove all event listeners function to stop the game if any playr wins
+
       winSound();
+
       stopGame();
     };
 
@@ -241,17 +250,19 @@ $(document).ready(function() {
   function leaveEvent() {
     this.classList = "box";
   }
-  // adding the click function
-  const clickSound = function() {
-    let myClickSound = new Audio("Sound/sound2.mp3");
-    myClickSound.play();
-  };
 
   //adding the win sound
   const winSound = function() {
     let mywinSound = new Audio("Sound/win.mp3");
     mywinSound.play();
   };
+
+  // adding the click function
+  const clickSound = function() {
+    let myClickSound = new Audio("Sound/click.mp3");
+    myClickSound.play();
+  };
+
   // foor loop to excute the function
   for (let i = 0; i < boxes.length; i++) {
     boxes[i].addEventListener("click", clickEvent);
