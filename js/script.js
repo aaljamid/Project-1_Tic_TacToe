@@ -16,10 +16,14 @@ $(document).ready(function() {
     // cross = even numbers (0,2,4, etc..)
     if (count % 2 === 0) {
       this.classList += " cross";
+      //adding the click sound function
+      clickSound();
 
       // circle = odd numbers (1,3,5, etc..)
     } else {
       this.classList += " circle";
+      //adding the click sound function
+      clickSound();
     }
 
     // increse counter +1 for eavery click
@@ -35,6 +39,7 @@ $(document).ready(function() {
       countScore1++;
       $(".winner").html(crossWin);
       $(".score1").html(countScore1);
+      winSound();
 
       // remove all event listeners function to stop the game if any playr wins
       stopGame();
@@ -47,6 +52,7 @@ $(document).ready(function() {
       $(".winner").html(circleWin);
       $(".score2").html(countScore2);
       // remove all event listeners function to stop the game if any playr wins
+      winSound();
       stopGame();
     };
 
@@ -235,7 +241,17 @@ $(document).ready(function() {
   function leaveEvent() {
     this.classList = "box";
   }
+  // adding the click function
+  const clickSound = function() {
+    let myClickSound = new Audio("Sound/sound2.mp3");
+    myClickSound.play();
+  };
 
+  //adding the win sound
+  const winSound = function() {
+    let mywinSound = new Audio("Sound/win.mp3");
+    mywinSound.play();
+  };
   // foor loop to excute the function
   for (let i = 0; i < boxes.length; i++) {
     boxes[i].addEventListener("click", clickEvent);
