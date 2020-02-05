@@ -176,6 +176,9 @@ $(document).ready(function() {
     //wins conditions for all the corners (2)
 
     //1
+
+    // compare the classes' names for the corners
+    // and make sure the boxes' classes are not named 'box'
     else if (
       boxes[0].classList.value == boxes[4].classList.value &&
       boxes[4].classList.value == boxes[8].classList.value &&
@@ -187,13 +190,16 @@ $(document).ready(function() {
       if (boxes[0].classList.value.includes("cross")) {
         crossWinFunction();
       }
-      // adding condition if the cross wins
+      // adding condition if the circle wins
       if (boxes[0].classList.value.includes("circle")) {
         circleWinFunction();
       }
     }
 
     //2
+
+    // compare the classes' names for the corners
+    // and make sure the boxes' classes are not named 'box'
     else if (
       boxes[2].classList.value == boxes[4].classList.value &&
       boxes[4].classList.value == boxes[6].classList.value &&
@@ -201,15 +207,18 @@ $(document).ready(function() {
       boxes[4].classList.value != "box" &&
       boxes[6].classList.value != "box"
     ) {
+      // adding condition if the cross wins
       if (boxes[2].classList.value.includes("cross")) {
         crossWinFunction();
       }
+      // adding condition if the circle wins
       if (boxes[2].classList.value.includes("circle")) {
         circleWinFunction();
       }
     }
 
     /// No one wins
+    // show 'Tie' in case no one wins
     else if (count >= 9) {
       console.log("Tie");
       $(".winner").html(" <h2>Tie</h2>");
@@ -217,20 +226,24 @@ $(document).ready(function() {
     }
   }
 
+  // adding the hover event
   function hoverEvent() {
     this.classList += " black";
   }
 
+  // adding leave event
   function leaveEvent() {
     this.classList = "box";
   }
 
+  // foor loop to excute the function
   for (let i = 0; i < boxes.length; i++) {
     boxes[i].addEventListener("click", clickEvent);
     boxes[i].addEventListener("mouseover", hoverEvent);
     boxes[i].addEventListener("mouseleave", leaveEvent);
   }
 
+  // stop the game function to unplog the events
   const stopGame = function() {
     for (let i = 0; i < boxes.length; i++) {
       boxes[i].removeEventListener("mouseleave", leaveEvent);
@@ -239,12 +252,14 @@ $(document).ready(function() {
     }
   };
 
+  // play again button function
   $(".playAgain").click(function() {
     count = 0;
     console.log("button test");
     $(".box").attr("class", "box");
     $(".winner").html("<h2></h2>");
 
+    // add the event again so the boxes will function
     for (let i = 0; i < boxes.length; i++) {
       boxes[i].addEventListener("click", clickEvent);
       boxes[i].addEventListener("mouseover", hoverEvent);

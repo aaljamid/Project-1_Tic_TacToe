@@ -1,7 +1,7 @@
 # Project-1_Tic_TacToe
 
-This project is about creating the famous game "Tic Tac Toe".
-We should implement the knowledge you acquired during the past 2 weeks to design and build the game.
+This project is about creating an online version of the famous game "Tic Tac Toe".
+We should implement the knowledge that acquired during the past 2 weeks to design, build, and deploy the game.
 
 # Technical Requirements
 
@@ -35,3 +35,9 @@ Have well-formatted, and well-commented code
 - jQuery
 
 # Logic
+
+- a player wins if 3 boxes in a row (vertically, horizontally, or from corners) have the same value (cross ||circle)
+
+- The player's turn will be determined based on the counter value (if odd number='cross' || even number='cross')
+
+* Using 'for' loop it will add the events for each time clickd on any of he boxes
